@@ -20,8 +20,8 @@ $secondary-color: #0065FC;
     align-items: $alignment;
 }
 
-// @mixin mobile{
-//     @media all and (min-width: 700px) {
-//     @content;
-//     }     
-// }
+@mixin mobile{
+    @media all and (min-width: 700px) {
+    @content;
+    }     
+}
