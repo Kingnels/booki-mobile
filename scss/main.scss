@@ -1,0 +1,193 @@
+@import "settings";
+@import "content-box";
+body {
+
+    // .container{
+    //     @include flex (column,center,center);
+
+    // }
+
+    header{
+        @include flex(column,center,center);
+        nav{
+            // border: 1px solid red;
+            @include flex(column,center,center);
+            .active{      
+                color: #0065FC;
+                border-bottom: 4px solid #0065FC;  
+            }
+
+            .logo{
+                margin-top: 1rem;
+                width: 130px;
+                    img{  
+                        width: 100%;
+                    }
+            }
+
+            ul{
+                @include flex(row,space-between,flex-start);   
+                // border: 1px solid black;    
+                width: 100vw;   
+                
+                li{   
+                    margin:0;
+                    padding: 0 20px;
+                    height: 70px;
+                    line-height: 70px;
+                    font-weight: 500;
+                    text-align: center;
+                    font-size: 20px ;
+                    
+                }
+
+            }
+        
+        }
+    }
+
+    .search{
+        padding: 1rem;
+        // @include flex(column, center,center);
+        .search-text{
+            // border: 1px solid red;
+            @include flex(column, flex-start,flex-start);
+            text-align: left;
+            line-height: 2rem;
+            padding-top: 1rem  ;
+
+            h2{
+                padding-bottom:0.5rem;
+            }
+            p{
+                font-weight: 400;
+                font-size: 15px;
+            }
+
+           
+        }
+        .search-form{
+            border: 1px solid $primary-color;
+            height: 45px;
+            width: 300px;
+            overflow: hidden;
+            border-radius: 15px;
+            @include flex(row,space-between, center);
+            margin: 1.2rem 0;
+
+            .icon{
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: none;
+                width: 65px;
+               
+                background:#f2f2f2;
+            }
+            input{
+                height: 100%;
+                outline: none;
+                // text-align: center;
+                padding-left: 10px;
+                font-weight: 700;
+                border: none;
+                width: 100%;
+                font-size: 16px;
+                color: #000;
+            }
+
+            .btn button {
+                height: 100%;
+                color: #fff;
+                padding: 10px;
+                border: none;
+                cursor: pointer;
+                height: 45px;
+                outline: none;
+                background: $secondary-color;
+            }
+            
+        }
+
+        .filters {
+            @include flex (column, flex-start, flex-start);
+
+            .filter-text{
+                font-weight:700;
+                font-size: 20px;
+                margin-bottom: 0.7rem;
+            }
+
+            .filter{
+                display: flex;
+                flex-flow: row wrap ;
+                justify-content: flex-start;
+                // border: 1px solid black;
+                gap:1rem;
+                
+
+                .first{
+                    display: flex;
+                    flex-flow: row wrap ;
+                    justify-content: flex-start;
+                    border: 1px solid $primary-color;
+                    border-radius: 20px;
+                    height: 45px;
+                    overflow: hidden;
+                    box-shadow: 0 0 3px $primary-color;
+                    margin-bottom: 0.7rem;               
+    
+                    .filter-icon{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border: none;
+                        line-height: 45px;
+                        height: 45px;
+                        width: 65px;
+                        color: $secondary-color;
+                        background:$primary-color;
+                        border-radius: 20px;
+                    }
+    
+                    .filter1 h2{
+                        margin-left: 15px;
+                        height: 45px;
+                        line-height: 45px;
+                        padding-right: 15px;
+                        font-size: 14px;
+                        font-weight: 500px
+    
+                    }
+
+                }
+
+            }
+
+        }
+
+        .hint {
+            @include flex(row,flex-start, right);
+            margin: 1.4rem 0;
+            height: 25px;
+            line-height: 25px;
+            // border: 2px solid #000;
+
+            h2 {
+                @include flex(row,center, center);
+                border: 1px solid $secondary-color;
+                width: 25px;
+                height: 25px;
+                border-radius: 50%;
+                color:$secondary-color;
+                margin-right: 10px;
+            }
+
+        }
+
+    }
+
+    
+   
+}
