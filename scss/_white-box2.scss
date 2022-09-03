@@ -45,7 +45,11 @@
         @include flex(column,flex-start,center);
                 margin: 0 auto 1rem auto;
                 background-color:#fff;
-                width: 300px;
+                width: 80vw;
+                margin: 0 auto 1rem auto;
+                min-width: 310px;
+                max-width: 650px;
+                // width: 300px;
                 border: 5px solid #fff;
                 border-radius: 25px;
                 box-shadow: 0px 0px 5px #ccc;
@@ -159,7 +163,11 @@
         @include flex(column,flex-start,center);
                 margin: 0 auto 1rem auto;
                 background-color:#fff;
-                width: 300px;
+                width: 80vw;
+                margin: 0 auto 1rem auto;
+                min-width: 310px;
+                max-width: 650px;
+                // width: 300px;
                 border: 5px solid #fff;
                 border-radius: 25px;
                 box-shadow: 0px 0px 5px #ccc;

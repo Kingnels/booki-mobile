@@ -45,9 +45,11 @@ ul {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  margin: 0 auto 1rem auto;
   background-color: #fff;
-  width: 300px;
+  width: 80vw;
+  margin: 0 auto 1rem auto;
+  min-width: 310px;
+  max-width: 650px;
   border: 5px solid #fff;
   border-radius: 25px;
   box-shadow: 0px 0px 5px #ccc;
@@ -156,7 +158,10 @@ ul {
   align-items: center;
   margin: 0 auto 1rem auto;
   background-color: #fff;
-  width: 300px;
+  width: 80vw;
+  margin: 0 auto 1rem auto;
+  min-width: 310px;
+  max-width: 650px;
   border: 5px solid #fff;
   border-radius: 25px;
   box-shadow: 0px 0px 5px #ccc;
@@ -241,7 +246,10 @@ ul {
   align-items: center;
   margin: 0 auto 1rem auto;
   background-color: #fff;
-  width: 350px;
+  width: 80vw;
+  margin: 0 auto 1rem auto;
+  min-width: 310px;
+  max-width: 650px;
   border: 5px solid #fff;
   border-radius: 25px;
   box-shadow: 0px 0px 5px #ccc;
@@ -371,7 +379,10 @@ ul {
   align-items: center;
   margin: 0 auto 1rem auto;
   background-color: #fff;
-  width: 300px;
+  width: 80vw;
+  margin: 0 auto 1rem auto;
+  min-width: 310px;
+  max-width: 650px;
   border: 5px solid #fff;
   border-radius: 25px;
   box-shadow: 0px 0px 5px #ccc;
@@ -456,7 +467,10 @@ ul {
   align-items: center;
   margin: 0 auto 1rem auto;
   background-color: #fff;
-  width: 300px;
+  width: 80vw;
+  margin: 0 auto 1rem auto;
+  min-width: 310px;
+  max-width: 650px;
   border: 5px solid #fff;
   border-radius: 25px;
   box-shadow: 0px 0px 5px #ccc;
@@ -597,14 +611,11 @@ body header {
   align-items: center;
 }
 body header nav {
+  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-}
-body header nav .active {
-  color: #0065FC;
-  border-bottom: 4px solid #0065FC;
 }
 body header nav .logo {
   display: flex;
@@ -623,8 +634,12 @@ body header nav ul {
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
-  width: 100vw;
+  width: 100%;
   min-width: 320px;
+}
+body header nav ul .active {
+  color: #0065FC;
+  border-bottom: 4px solid #0065FC;
 }
 body header nav ul li {
   margin: 0;
@@ -650,18 +665,18 @@ body .search .search-text {
   padding-top: 1rem;
 }
 body .search .search-text h2 {
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.3rem;
 }
 body .search .search-text p {
   font-weight: 400;
   font-size: 15px;
 }
 body .search .search-form {
-  border: 1px solid #f2f2f2;
+  border: 1px solid rgb(231, 226, 226);
   height: 45px;
   width: 270px;
   overflow: hidden;
-  border-radius: 15px;
+  border-radius: 20px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -722,7 +737,7 @@ body .search .filters .filter .first {
   border-radius: 20px;
   height: 45px;
   overflow: hidden;
-  box-shadow: 0 0 3px #f2f2f2;
+  box-shadow: 0 0 3px rgb(72, 68, 68);
   margin-bottom: 0.7rem;
 }
 body .search .filters .filter .first .filter-icon {
