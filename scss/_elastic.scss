@@ -1,0 +1,63 @@
+@include med{
+    .grey-box{
+        .cards{
+            font-size: 1.1rem;
+        }
+    } 
+    
+    .white-box{
+        .white-box-cards{
+            @include flex(row, space-between, center);
+            flex-wrap: wrap;
+
+            .cards1{
+                width: 45%;
+            }
+
+        }
+    }
+
+    .white-box2{
+        .white-cards2{
+            @include flex(row, space-between, center);
+            flex-wrap: wrap;
+            
+            .cards2{
+                width: 45%;
+            }
+
+        }
+    }
+}
+
+
+@include big {
+    .grey-box{
+        .cards{
+            font-size: 1rem;
+        }
+    } 
+   .two-box{
+        @include flex(row, space-between, flex-start);
+        flex-direction: row-reverse;
+
+   }
+   .white-box{
+        background-color: $primary-color;
+        width: 50%;
+        .white-box-cards{
+            @include flex(column, flex-start, flex-start);
+            flex-wrap: wrap;
+
+            .cards1{
+                width: 100%;
+            }
+
+        }
+    }
+   .white-box, .white-box2, .grey-box{
+        margin: 1.5rem;
+        
+    } 
+}
+

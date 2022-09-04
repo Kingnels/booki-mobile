@@ -9,6 +9,11 @@ ul{
     list-style-type: none;
 }
 
+body, html{
+    min-width: 330px;
+}
+
+
 $primary-color: #f2f2f2;
 $secondary-color: #0065FC;
 
@@ -20,8 +25,17 @@ $secondary-color: #0065FC;
     align-items: $alignment;
 }
 
-@mixin big{
-    @media all and (min-width:1020px) {
+@mixin med{
+    @media all and (min-width:650px) {
     @content;
     }     
+}
+@mixin big{
+    @media all and (min-width:800px) {
+    @content;
+    }     
+}
+
+img{
+    width: 100px;
 }
