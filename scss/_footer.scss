@@ -1,10 +1,9 @@
 footer{
     background: $primary-color;
     @include flex(column,flex-start, flex-start);
-
     .part1{
         // width: 550px;
-        padding-top: 2rem;
+        padding-top: 1rem;
         padding-left: 3rem;
         padding-bottom: 1rem;
 
@@ -19,10 +18,6 @@ footer{
             color: rgb(122, 112, 112);
             text-align: left;
             
-        }
-         
+        }    
     }
-    
-
-
 }

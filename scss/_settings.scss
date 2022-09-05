@@ -31,7 +31,12 @@ $secondary-color: #0065FC;
     }     
 }
 @mixin big{
-    @media all and (min-width:800px) {
+    @media all and (min-width:700px) {
+    @content;
+    }     
+}
+@mixin xbig{
+    @media all and (min-width:1024px) {
     @content;
     }     
 }
