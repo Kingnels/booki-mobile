@@ -7,7 +7,7 @@
                 header{
                     @include flex(row,space-between,center);
                 nav{
-                    // border: 1px solid blue;
+                    // border: 1px solid red;
                     @include flex(row,space-between,center);
                     .active{      
                         color: #0065FC;
